@@ -63,11 +63,11 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#event-info">О мероприятии</a></li>
-            <li><a href="#roles">Роли и задачи</a></li>
-            <li><a href="#program">Программа дня</a></li>
-            <li><a href="#location">Место проведения</a></li>
-            <li><a href="#contact">Контакты</a></li>
+           <li><a href="1.html">О мероприятии</a></li>
+            <li><a href="READ.md">Роли и задачи</a></li>
+            <li><a href="3.html">Программа дня</a></li>
+            <li><a href="4.html">Место проведения</a></li>
+            <li><a href="5.html">Контакты</a></li>
         </ul>
     </nav>
     <main>
