@@ -63,8 +63,8 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#roles">Роли и задачи</a></li>
             <li><a href="#event-info">О мероприятии</a></li>
+            <li><a href="#roles">Роли и задачи</a></li>
             <li><a href="#program">Программа дня</a></li>
             <li><a href="#location">Место проведения</a></li>
             <li><a href="#contact">Контакты</a></li>
