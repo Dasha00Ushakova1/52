@@ -1,124 +1,149 @@
-
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>День программиста</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS для стилей -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #23262D; /* Цвет фона */
+            color: #FFFFFF; /* Цвет текста */
+        }
+
+        header {
+            background-color: #4C7124; /* Цвет заголовка */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: #90AACF; /* Цвет ссылок */
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #445B7D; /* Цвет подвала */
+            padding: 10px;
+            text-align: center;
+        }
+
+        #qr-code {
+            width: 150px; /* Размер QR-кода */
+            height: auto; /* Автоматическая высота */
+        }
+
+        .poll {
+            background-color: #3A3F47; /* Цвет фона опроса */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .poll h3 {
+            margin-top: 0;
+        }
+
+        .poll label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .poll button {
+            background-color: #4C7124; /* Цвет кнопки */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .poll button:hover {
+            background-color: #3A5B1E; /* Цвет кнопки при наведении */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>День программиста</h1>
-        <p>Дата: [указать дату] | Время: [указать время]</p>
-        <p>Место проведения: Актовый зал колледжа</p>
-        <img src="qr-code.png" alt="QR-код на сайт мероприятия" id="qr-code"> 
+        <p>Дата: 13 сентября | Время: 10:00 - 16:00</p>
+        <img src="qr-code.png" alt="QR-код на сайт мероприятия" id="qr-code"> <!-- QR-код -->
     </header>
+    
     <nav>
         <ul>
-            <li><a href="#about">О мероприятии</a></li>
-            <li><a href="#program">Программа дня</a></li>
-            <li><a href="#location">Место проведения</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="1.html">О мероприятии</a></li>
+            <li><a href="READ.md">Роли и задачи</a></li>
+            <li><a href="3.html">Программа дня</a></li>
+            <li><a href="4.html">Место проведения</a></li>
+            <li><a href="5.html">Контакты</a></li>
         </ul>
     </nav>
+    
     <main>
-        <section id="about">
+        <section id="event-info">
             <h2>О мероприятии</h2>
-            <p>«День программиста» — это уникальная возможность для студентов и профессионалов в области программирования встретиться, обменяться опытом и узнать о последних тенденциях в индустрии.</p>
+            <p>День программиста — это уникальная возможность для всех любителей программирования и технологий собраться вместе, обменяться опытом и узнать о последних тенденциях в мире IT.</p>
+            <p>В программе мероприятия предусмотрены лекции, мастер-классы и обсуждения актуальных тем. Участники смогут познакомиться с ведущими экспертами отрасли и задать им вопросы.</p>
+            <p>Мы также планируем различные конкурсы и призы для активных участников. Не упустите шанс стать частью этого увлекательного события!</p>
         </section>
-        <section id="program">
-            <h2>Программа дня</h2>
-            <table>
-                <tr>
-                    <th>Время</th>
-                    <th>Действие</th>
-                    <th>Ответственный</th>
-                </tr>
-                <tr>
-                    <td>10:00 - 10:30</td>
-                    <td>Регистрация участников</td>
-                    <td>Организаторы</td>
-                </tr>
-                <tr>
-                    <td>10:30 - 11:00</td>
-                    <td>Открытие мероприятия</td>
-                    <td>Ведущий</td>
-                </tr>
-                <tr>
-                    <td>11:00 - 12:00</td>
-                    <td>Лекция «Будущее программирования»</td>
-                    <td>Спикер</td>
-                </tr>
-                <tr>
-                    <td>15:00 - 16:00</td>
-                    <td>Закрытие мероприятия</td>
-                    <td>Ведущий</td>
-                </tr>
-            </table>
-        </section>
-        <section id="location">
-            <h2>Место проведения</h2>
-            <p>Aктовый зал колледжа. Для онлайн-участников будет доступна трансляция через Zoom.</p>
+
+        <section id="poll" class="poll">
+            <h2>Опрос: Какие темы вам интересны?</h2>
+            <form id="poll-form">
+                <h3>Выберите одну или несколько тем:</h3>
+                <label><input type="checkbox" name="topic" value="AI"> Искусственный интеллект</label>
+                <label><input type="checkbox" name="topic" value="Web Development"> Веб-разработка</label>
+                <label><input type="checkbox" name="topic" value="Cybersecurity"> Кибербезопасность</label>
+                <label><input type="checkbox" name="topic" value="Data Science"> Наука о данных</label>
+                <label><input type="checkbox" name="topic" value="Cloud Computing"> Облачные технологии</label>
+                <button type="submit">Отправить голос</button>
+            </form>
+            <p id="poll-result" style="display:none;">Спасибо за ваш голос!</p>
         </section>
     </main>
-    <footer id="contact">
-        <h2>Контакты организаторов:</h2>
+
+    <footer>
+        <p>Следите за нами в социальных сетях!</p>
+        <!-- Добавьте ссылки на социальные сети -->
     </footer>
+
+    <script>
+        document.getElementById('poll-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Отменяем стандартное поведение формы
+            document.getElementById('poll-result').style.display = 'block'; // Показываем сообщение
+            this.reset(); // Сбрасываем форму
+        });
+    </script>
 </body>
-<style>
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    margin: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-main {
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 10px;
-}
-
-footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-}
-    
-#qr-code {
-   width: 150px;
-   height:auto; 
-}
-
-</style>
-<script>
-</script>
-
-
+</html>
