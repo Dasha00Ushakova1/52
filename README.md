@@ -1,141 +1,117 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>День программиста</title>
     <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS для стилей -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #23262D; /* Цвет фона */
+            color: #FFFFFF; /* Цвет текста */
+        }
+        header {
+            background-color: #4C7124; /* Цвет заголовка */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            color: #90AACF; /* Цвет ссылок */
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #445B7D; /* Цвет подвала */
+            padding: 10px;
+            text-align: center;
+        }
+        #qr-code {
+            width: 150px; /* Размер QR-кода */
+            height: auto; /* Автоматическая высота */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>День программиста</h1>
         <p>Дата: 13 сентября | Время: 10:00 - 16:00</p>
-        <p>Место проведения: Актовый зал колледжа</p>
         <img src="qr-code.png" alt="QR-код на сайт мероприятия" id="qr-code"> <!-- QR-код -->
     </header>
     <nav>
         <ul>
-            <li><a href="#about">О мероприятии</a></li>
+            <li><a href="#roles">Роли и задачи</a></li>
+            <li><a href="#event-info">О мероприятии</a></li>
             <li><a href="#program">Программа дня</a></li>
             <li><a href="#location">Место проведения</a></li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
     <main>
-        <section id="about">
-            <h2>О мероприятии</h2>
-            <p>«День программиста» — это уникальная возможность для студентов и профессионалов в области программирования встретиться, обменяться опытом и узнать о последних тенденциях в индустрии.</p>
-        </section>
-        <section id="program">
-            <h2>Программа дня</h2>
-            <table>
-                <tr>
-                    <th>Время</th>
-                    <th>Действие</th>
-                    <th>Ответственный</th>
-                </tr>
-                <tr>
-                    <td>10:00 - 10:30</td>
-                    <td>Регистрация участников</td>
-                    <td>Организаторы</td>
-                </tr>
-                <tr>
-                    <td>10:30 - 11:00</td>
-                    <td>Открытие мероприятия</td>
-                    <td>Ведущий</td>
-                </tr>
-                <tr>
-                    <td>11:00 - 12:00</td>
-                    <td>Лекция «Будущее программирования»</td>
-                    <td>Спикер</td>
-                </tr>
-                <tr>
-                    <td>12:00 - 13:00</td>
-                    <td>Мастер-класс «Основы веб-разработки»</td>
-                    <td>Инструктор</td>
-                </tr>
-                <tr>
-                    <td>13:00 - 14:00</td>
-                    <td>Обед</td>
-                    <td>—</td>
-                </tr>
-                <tr>
-                    <td>14:00 - 15:00</td>
-                    <td>Панельная дискуссия «Тренды в программировании»</td>
-                    <td>Модератор</td>
-                </tr>
-                <tr>
-                    <td>15:00 - 16:00</td>
-                    <td>Закрытие мероприятия</td>
-                    <td>Ведущий</td>
-                </tr>
-            </table>
-        </section>
-        <section id="location">
-            <h2>Место проведения</h2>
-            <p>Aктовый зал колледжа. Для онлайн-участников будет доступна трансляция через Zoom.</p>
+        <section id="roles">
+            <h2>Роли и распределение задач</h2>
+            <h3>Команды:</h3>
+            <ul>
+                <li><strong>Техники (4 человека):</strong>
+                    <ul>
+                        <li>Подготовка оборудования.</li>
+                        <li>Настройка трансляции.</li>
+                        <li>Обеспечение технической поддержки во время мероприятия.</li>
+                    </ul>
+                </li>
+                <li><strong>Дизайнеры (2 человека):</strong>
+                    <ul>
+                        <li>Разработка визуального оформления.</li>
+                        <li>Создание макетов баннеров, бейджей и указателей.</li>
+                    </ul>
+                </li>
+                <li><strong>Креативщики (4 человека):</strong>
+                    <ul>
+                        <li>Подготовка видеороликов и презентаций.</li>
+                        <li>Создание интерактивных элементов для участников.</li>
+                    </ul>
+                </li>
+                <li><strong>Организаторы (4 человека):</strong>
+                    <ul>
+                        <li>Координация всех команд.</li>
+                        <li>Обеспечение логистики и порядка на мероприятии.</li>
+                    </ul>
+                </li>
+                <li><strong>Специалисты по контенту (2 человека):</strong>
+                    <ul>
+                        <li>Подготовка материалов для участников.</li>
+                        <li>Создание информационных буклетов и программ.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
     </main>
-    <footer id="contact">
-        <h2>Контакты организаторов:</h2>
-        <p>Email: organizer@example.com</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
+    <footer>
         <p>Следите за нами в социальных сетях!</p>
         <!-- Добавьте ссылки на социальные сети -->
     </footer>
-    <script>
-        // Здесь можно добавить JavaScript для интерактивности
-        // Например, обработка событий или анимации
-        // ...
-    </script>
 </body>
-<style>
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-nav {
-    margin: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-main {
-    padding: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 10px;
-}
-
-footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-}
-#qr-code {
-   width: 150px; /* Размер QR-кода */
-   height:auto; /* Автоматическая высота */
-}
-/* Добавьте дополнительные стили по необходимости */
-</style>
+</html>
